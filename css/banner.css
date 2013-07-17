@@ -1,0 +1,215 @@
+/* 
+html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+html5doctor.com/html-5-reset-stylesheet/
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+	display:block;
+}
+
+blockquote, q { quotes:none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse:collapse; border-spacing:0; }
+
+input, select { vertical-align:middle; }
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: none; }
+
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+/* webkit browsers add a 2px margin outside the chrome of form elements */  
+button, input, select, textarea { margin: 0; }
+
+/*banner*/
+
+#banner{
+	position:relative; 
+	width:850px; 
+	height:300px;
+	overflow:hidden;
+}
+
+#banner .hide{
+	visibility:hidden; 
+	opacity:0; 
+}
+
+/*Banner Slides*/
+
+#bannerSlides{
+	position:absolute;
+	width:780px; 
+	height:300px;
+}
+
+#bannerSlides .slide{
+	position:absolute; 
+	width:780px; 
+	height:300px;
+	top: 0;
+	left: 0;
+}
+
+/*Banner Mask*/
+
+#bannerMask {
+	position: absolute;
+	width: 1500px;
+	height: 1000px;
+	top: -200px;
+	left: -250px;
+	background: url('../image/banner/circleMask.png') 0 0 no-repeat;
+	background-size: 100%;
+}
+
+#bannerBorder {
+	position: absolute;
+	width: 779px;
+	height: 298px;
+	border: 1px solid #BECED8;
+}
+
+/*Slides Content*/
+
+#bannerSlides .slideContent{
+	position: absolute;
+	top:40px; 
+	left:50px; 
+	width: 375px;
+	height: auto;
+}
+
+#bannerSlides .slideHeader {
+	padding-bottom: 5px;
+}
+
+
+/*nthChild-1*/
+
+#bannerSlides .slide .nthChild-1 {
+
+}
+
+#bannerSlides .nthChild-1 .slideHeader {
+	position: relative;
+	width: 321px;
+	height: 97px;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+}
+
+
+/*nthChild-2*/
+
+#bannerSlides .slide .nthChild-2 {
+
+}
+
+#bannerSlides .nthChild-2 .slideHeader {
+	position: relative;
+	width: 347px;
+	height: 96px;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+}
+
+
+/*nthChild-3*/
+
+#bannerSlides .slide .nthChild-3 {
+
+}
+
+
+#bannerSlides .slide p{
+	font: 16px/24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#bannerSlides .slide a{
+	display: block;
+	position: absolute;
+	width: 182px;
+	height: 32px;
+	top: 192px;
+	left: 472px;
+	text-indent: -9999px;
+	background: url('../image/banner/learnMore_btn.png') 0 0 no-repeat;
+}
+
+#bannerSlides .slide a:hover{
+	background: url('../image/banner/learnMore_btn.png') 0 -32px no-repeat;
+}
+
+/*bannerPreloader*/
+
+#bannerPreloader{
+	position:absolute; 
+	width:25px;
+	height:25px; 
+	left:330px;
+	top:125px;
+} 
+
+/*bannerNavigation*/
+
+#bannerNavigation{
+	position: absolute;
+	top: 10px;
+	width: 21px;
+	height: 25px;
+	right: 40px;
+}
+
+#bannerNavigation .button{
+	position:relative; 
+	float:left; 
+	width:18px; 
+	height:18px; 
+	cursor: pointer; 
+	margin-bottom: 4px;
+	background: url('../image/banner/nav_btn.png') 0 -18px no-repeat;
+} 
+
+#bannerNavigation .button:hover {
+	background: url('../image/banner/nav_btn.png') 0 -36px no-repeat;
+}
+
+#bannerNavigation .button.active {
+	background: url('../image/banner/nav_btn.png') 0 0 no-repeat;
+}

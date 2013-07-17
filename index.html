@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/banner.css" />
+<title>JSBanner default</title>
+
+<script type="text/javascript" src="./javascript/jquery-1.7.1.min.js"></script>
+<script type="text/javascript"> 
+    var $j = jQuery.noConflict(); 
+    $j(document).ready(function(){
+
+        // ================== ATTENTION ===================== //
+        // dont forget to run setupBanner in your global.js
+        // ================================================== //
+        setupBanner(); // <<<--------------------------------
+        // ================================================== //
+        
+    }); 
+</script>
+<script type="text/javascript" src="./javascript/jsbanner.js"></script>
+<script type="text/javascript" src="./javascript/bannerSlides.js"></script>
+</head>
+<body>
+
+<!-- tal file cut here -->
+
+<!-- <metal:block define-macro="custom"> -->
+    
+<div id="banner">
+    <div id="bannerPreloader" class="hide"> 
+        <img src="./image/banner/130.gif" alt="banner preloader" width="25" height="25" /> 
+    </div> 
+
+    <div id="bannerSlides">
+
+        <div class="slide nthChild-1 hide" data-bg="./image/banner/banner1.jpg">
+            <div class='slideContent'>
+                <div class='slideHeader' data-bg="./image/banner/title1.png"></div>
+                <p>Set your eyes on your new home horizon with a personalized mortgage loan.</p>
+                <a href="/personal/loans/home-mortgage-loan.html" class="learnMore" title="Learn More">Learn More</a>
+            </div>
+        </div>
+
+        <div class="slide nthChild-2 hide" data-bg="./image/banner/banner2.jpg">
+            <div class='slideContent'>
+                <div class='slideHeader' data-bg="./image/banner/title2.png"></div>
+                <p>We’re coming together with Old National Bank to provide you with more convenience.</p>
+                <a href="/about-us/locations.html" class="learnMore" title="Learn More">Learn More</a>
+            </div>
+        </div>
+
+        <div class="slide nthChild-3 hide" data-bg="./image/banner/banner3.jpg">
+            <div class='slideContent'>
+                <a href="/personal/checking/kasasa-cash.html" class="learnMore" title="Learn More">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="bannerMask"></div>
+
+    <div id="bannerBorder"></div>
+
+    <div id="bannerNavigation" class="hide">
+        <div class="button navigate"></div>
+        <div class="button navigate"></div>
+        <div class="button navigate"></div>
+    </div>
+
+</div>
+
+<!-- </metal:block> -->
+
+<!-- cut here -->
+
+</body>
+</html>
